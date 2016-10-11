@@ -1,0 +1,15 @@
+How to use
+
+1. Click “install” to install for the 1st time. You may need to enter your system password during installation
+
+2. Put svg files under the images folder
+
+3. Click “run” to convert svg into font icon
+
+p.s:
+1. svg file name would be font icon’s text so for abc.svg, its font icon test is “abc”
+2. Please use “-“ for multiple words, for example, abc-def.svg
+3. The program would auto-rerun when anything changed under the images folder
+4. For quick preview outcom, please open index.html
+5. The program would install font icons into system by the way
+6. This program is only for MAC

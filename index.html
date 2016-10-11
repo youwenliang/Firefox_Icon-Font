@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fxos-icons</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+      }
+
+      body {
+        font-family: 'Helvetica', sans-serif;
+        background: #eee;
+        color: #444;
+      }
+
+      section {
+        padding: 20px;
+        text-align: left;
+      }
+
+      section a {
+        box-sizing: content-box;
+        display: inline-block;
+        color: #222;
+        width: 3rem;
+        height: 3rem;
+        text-decoration: none;
+        border: solid 1px #eee;
+        text-align: center;
+        margin: -1px;
+        background: #fff;
+        line-height: 1;
+      }
+
+      section a:hover {
+        background: #f4f4f4;
+      }
+
+      section a:target {
+        background: #00caf2;
+        transform: scale(2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+      }
+
+      #show-view-boxes:checked ~ section a:before {
+        background: rgba(0, 0, 0, 0.12);
+      }
+
+      h1 {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 140px;
+        color: #E5E5E5;
+        -moz-user-select: none;
+        letter-spacing: -2px;
+        text-shadow:
+          -1px -1px 0 rgba(0, 0, 0, 0.1),
+          1px 1px 0 rgba(255, 255, 255, 0.5)
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        border-top: solid 1px #ddd;
+        text-align: right;
+        font-size: 13px;
+      }
+
+      footer label {
+        display: block;
+        float: right;
+        padding: 0.7rem 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        cursor: pointer;
+        color: #fff;
+        -moz-user-select: none;
+             user-select: none;
+      }
+
+      footer label:hover {
+        background: rgba(0, 0, 0, 0.15);
+      }
+
+      #show-view-boxes:checked ~ footer label[for="show-view-boxes"] {
+        background: #00caf2;
+        color: #fff;
+      }
+
+      #show-view-boxes {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="fxos-icons.css">
+    <!-- <link rel="stylesheet" href="bidi-helper.css"> -->
+  </head>
+  <body>
+    <!-- <input id="show-view-boxes" type="checkbox"> -->
+    <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
+    <section>
+
+      <a aria-hidden="true" href="#add-on-circle" id="add-on-circle" data-icon="add-on-circle"></a>
+
+      <a aria-hidden="true" href="#add-on-disable" id="add-on-disable" data-icon="add-on-disable"></a>
+
+      <a aria-hidden="true" href="#add-on" id="add-on" data-icon="add-on"></a>
+
+      <a aria-hidden="true" href="#add-reading-list" id="add-reading-list" data-icon="add-reading-list"></a>
+
+      <a aria-hidden="true" href="#add" id="add" data-icon="add"></a>
+
+      <a aria-hidden="true" href="#audio" id="audio" data-icon="audio"></a>
+
+      <a aria-hidden="true" href="#back" id="back" data-icon="back"></a>
+
+      <a aria-hidden="true" href="#bookmark-hollow" id="bookmark-hollow" data-icon="bookmark-hollow"></a>
+
+      <a aria-hidden="true" href="#bookmark" id="bookmark" data-icon="bookmark"></a>
+
+      <a aria-hidden="true" href="#camera-disable" id="camera-disable" data-icon="camera-disable"></a>
+
+      <a aria-hidden="true" href="#camera" id="camera" data-icon="camera"></a>
+
+      <a aria-hidden="true" href="#caption" id="caption" data-icon="caption"></a>
+
+      <a aria-hidden="true" href="#cast" id="cast" data-icon="cast"></a>
+
+      <a aria-hidden="true" href="#chapter" id="chapter" data-icon="chapter"></a>
+
+      <a aria-hidden="true" href="#check" id="check" data-icon="check"></a>
+
+      <a aria-hidden="true" href="#chevron" id="chevron" data-icon="chevron"></a>
+
+      <a aria-hidden="true" href="#copy" id="copy" data-icon="copy"></a>
+
+      <a aria-hidden="true" href="#cursor" id="cursor" data-icon="cursor"></a>
+
+      <a aria-hidden="true" href="#cut" id="cut" data-icon="cut"></a>
+
+      <a aria-hidden="true" href="#developer" id="developer" data-icon="developer"></a>
+
+      <a aria-hidden="true" href="#devtools-panel" id="devtools-panel" data-icon="devtools-panel"></a>
+
+      <a aria-hidden="true" href="#disclosure-collapsed-right" id="disclosure-collapsed-right" data-icon="disclosure-collapsed-right"></a>
+
+      <a aria-hidden="true" href="#disclosure-collapsed-up" id="disclosure-collapsed-up" data-icon="disclosure-collapsed-up"></a>
+
+      <a aria-hidden="true" href="#disclosure-expand" id="disclosure-expand" data-icon="disclosure-expand"></a>
+
+      <a aria-hidden="true" href="#disclosure-expanded" id="disclosure-expanded" data-icon="disclosure-expanded"></a>
+
+      <a aria-hidden="true" href="#downloads" id="downloads" data-icon="downloads"></a>
+
+      <a aria-hidden="true" href="#drop-down" id="drop-down" data-icon="drop-down"></a>
+
+      <a aria-hidden="true" href="#encoding" id="encoding" data-icon="encoding"></a>
+
+      <a aria-hidden="true" href="#feed" id="feed" data-icon="feed"></a>
+
+      <a aria-hidden="true" href="#forget" id="forget" data-icon="forget"></a>
+
+      <a aria-hidden="true" href="#forward" id="forward" data-icon="forward"></a>
+
+      <a aria-hidden="true" href="#full-screen" id="full-screen" data-icon="full-screen"></a>
+
+      <a aria-hidden="true" href="#fullscreen" id="fullscreen" data-icon="fullscreen"></a>
+
+      <a aria-hidden="true" href="#globe" id="globe" data-icon="globe"></a>
+
+      <a aria-hidden="true" href="#go" id="go" data-icon="go"></a>
+
+      <a aria-hidden="true" href="#help" id="help" data-icon="help"></a>
+
+      <a aria-hidden="true" href="#history" id="history" data-icon="history"></a>
+
+      <a aria-hidden="true" href="#home" id="home" data-icon="home"></a>
+
+      <a aria-hidden="true" href="#import-export-windows" id="import-export-windows" data-icon="import-export-windows"></a>
+
+      <a aria-hidden="true" href="#info-hollow" id="info-hollow" data-icon="info-hollow"></a>
+
+      <a aria-hidden="true" href="#info" id="info" data-icon="info"></a>
+
+      <a aria-hidden="true" href="#list-windows" id="list-windows" data-icon="list-windows"></a>
+
+      <a aria-hidden="true" href="#location-disable-mac" id="location-disable-mac" data-icon="location-disable-mac"></a>
+
+      <a aria-hidden="true" href="#location-disable-win" id="location-disable-win" data-icon="location-disable-win"></a>
+
+      <a aria-hidden="true" href="#location-disable" id="location-disable" data-icon="location-disable"></a>
+
+      <a aria-hidden="true" href="#location-mac" id="location-mac" data-icon="location-mac"></a>
+
+      <a aria-hidden="true" href="#location-win" id="location-win" data-icon="location-win"></a>
+
+      <a aria-hidden="true" href="#location" id="location" data-icon="location"></a>
+
+      <a aria-hidden="true" href="#mail" id="mail" data-icon="mail"></a>
+
+      <a aria-hidden="true" href="#menu" id="menu" data-icon="menu"></a>
+
+      <a aria-hidden="true" href="#microphone-disable" id="microphone-disable" data-icon="microphone-disable"></a>
+
+      <a aria-hidden="true" href="#microphone" id="microphone" data-icon="microphone"></a>
+
+      <a aria-hidden="true" href="#mute" id="mute" data-icon="mute"></a>
+
+      <a aria-hidden="true" href="#new-tab" id="new-tab" data-icon="new-tab"></a>
+
+      <a aria-hidden="true" href="#new-window-mac" id="new-window-mac" data-icon="new-window-mac"></a>
+
+      <a aria-hidden="true" href="#new-window-win" id="new-window-win" data-icon="new-window-win"></a>
+
+      <a aria-hidden="true" href="#no-audio" id="no-audio" data-icon="no-audio"></a>
+
+      <a aria-hidden="true" href="#notifications-disable" id="notifications-disable" data-icon="notifications-disable"></a>
+
+      <a aria-hidden="true" href="#notifications" id="notifications" data-icon="notifications"></a>
+
+      <a aria-hidden="true" href="#open" id="open" data-icon="open"></a>
+
+      <a aria-hidden="true" href="#organize-windows" id="organize-windows" data-icon="organize-windows"></a>
+
+      <a aria-hidden="true" href="#page-left" id="page-left" data-icon="page-left"></a>
+
+      <a aria-hidden="true" href="#panaroma" id="panaroma" data-icon="panaroma"></a>
+
+      <a aria-hidden="true" href="#panel-menu" id="panel-menu" data-icon="panel-menu"></a>
+
+      <a aria-hidden="true" href="#password" id="password" data-icon="password"></a>
+
+      <a aria-hidden="true" href="#past-search-linux" id="past-search-linux" data-icon="past-search-linux"></a>
+
+      <a aria-hidden="true" href="#paste" id="paste" data-icon="paste"></a>
+
+      <a aria-hidden="true" href="#pause" id="pause" data-icon="pause"></a>
+
+      <a aria-hidden="true" href="#permissions" id="permissions" data-icon="permissions"></a>
+
+      <a aria-hidden="true" href="#play" id="play" data-icon="play"></a>
+
+      <a aria-hidden="true" href="#plugin-disable" id="plugin-disable" data-icon="plugin-disable"></a>
+
+      <a aria-hidden="true" href="#plugin" id="plugin" data-icon="plugin"></a>
+
+      <a aria-hidden="true" href="#pocket" id="pocket" data-icon="pocket"></a>
+
+      <a aria-hidden="true" href="#pointer-disable" id="pointer-disable" data-icon="pointer-disable"></a>
+
+      <a aria-hidden="true" href="#pointer" id="pointer" data-icon="pointer"></a>
+
+      <a aria-hidden="true" href="#popup-block" id="popup-block" data-icon="popup-block"></a>
+
+      <a aria-hidden="true" href="#print" id="print" data-icon="print"></a>
+
+      <a aria-hidden="true" href="#privacy" id="privacy" data-icon="privacy"></a>
+
+      <a aria-hidden="true" href="#quit" id="quit" data-icon="quit"></a>
+
+      <a aria-hidden="true" href="#reader-mode" id="reader-mode" data-icon="reader-mode"></a>
+
+      <a aria-hidden="true" href="#reading-list" id="reading-list" data-icon="reading-list"></a>
+
+      <a aria-hidden="true" href="#reload" id="reload" data-icon="reload"></a>
+
+      <a aria-hidden="true" href="#save" id="save" data-icon="save"></a>
+
+      <a aria-hidden="true" href="#screen-share-disable" id="screen-share-disable" data-icon="screen-share-disable"></a>
+
+      <a aria-hidden="true" href="#screen-share" id="screen-share" data-icon="screen-share"></a>
+
+      <a aria-hidden="true" href="#search-hover-windows" id="search-hover-windows" data-icon="search-hover-windows"></a>
+
+      <a aria-hidden="true" href="#search-win" id="search-win" data-icon="search-win"></a>
+
+      <a aria-hidden="true" href="#search" id="search" data-icon="search"></a>
+
+      <a aria-hidden="true" href="#secure" id="secure" data-icon="secure"></a>
+
+      <a aria-hidden="true" href="#settings-mac" id="settings-mac" data-icon="settings-mac"></a>
+
+      <a aria-hidden="true" href="#settings-win" id="settings-win" data-icon="settings-win"></a>
+
+      <a aria-hidden="true" href="#share" id="share" data-icon="share"></a>
+
+      <a aria-hidden="true" href="#sidebars-mac" id="sidebars-mac" data-icon="sidebars-mac"></a>
+
+      <a aria-hidden="true" href="#sidebars-win" id="sidebars-win" data-icon="sidebars-win"></a>
+
+      <a aria-hidden="true" href="#stop" id="stop" data-icon="stop"></a>
+
+      <a aria-hidden="true" href="#store-data-disable" id="store-data-disable" data-icon="store-data-disable"></a>
+
+      <a aria-hidden="true" href="#store-data" id="store-data" data-icon="store-data"></a>
+
+      <a aria-hidden="true" href="#sync" id="sync" data-icon="sync"></a>
+
+      <a aria-hidden="true" href="#tab" id="tab" data-icon="tab"></a>
+
+      <a aria-hidden="true" href="#titlebar-off" id="titlebar-off" data-icon="titlebar-off"></a>
+
+      <a aria-hidden="true" href="#titlebar-on" id="titlebar-on" data-icon="titlebar-on"></a>
+
+      <a aria-hidden="true" href="#tracking-disable" id="tracking-disable" data-icon="tracking-disable"></a>
+
+      <a aria-hidden="true" href="#tracking" id="tracking" data-icon="tracking"></a>
+
+      <a aria-hidden="true" href="#type-controls" id="type-controls" data-icon="type-controls"></a>
+
+      <a aria-hidden="true" href="#unfullscreen" id="unfullscreen" data-icon="unfullscreen"></a>
+
+      <a aria-hidden="true" href="#urlbar-history-dropmarker" id="urlbar-history-dropmarker" data-icon="urlbar-history-dropmarker"></a>
+
+      <a aria-hidden="true" href="#warning-triangle" id="warning-triangle" data-icon="warning-triangle"></a>
+
+      <a aria-hidden="true" href="#web-app" id="web-app" data-icon="web-app"></a>
+
+      <a aria-hidden="true" href="#web-ide" id="web-ide" data-icon="web-ide"></a>
+
+      <a aria-hidden="true" href="#webrtc" id="webrtc" data-icon="webrtc"></a>
+
+    </section>
+ <!--    <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
+    <h3>LTR mode</h3>
+    <section dir="ltr">
+
+      <a aria-hidden="true" href="#back-ltr" id="back-ltr" data-icon="back"></a>
+
+      <a aria-hidden="true" href="#forward-ltr" id="forward-ltr" data-icon="forward"></a>
+
+      <a aria-hidden="true" href="#back-light-ltr" id="back-light-ltr" data-icon="back-light"></a>
+
+      <a aria-hidden="true" href="#forward-light-ltr" id="forward-light-ltr" data-icon="forward-light"></a>
+
+      <a aria-hidden="true" href="#arrow-back-ltr" id="arrow-back-ltr" data-icon="arrow-back"></a>
+
+      <a aria-hidden="true" href="#arrow-forward-ltr" id="arrow-forward-ltr" data-icon="arrow-forward"></a>
+
+      <a aria-hidden="true" href="#clear-input-ltr" id="clear-input-ltr" data-icon="clear-input"></a>
+
+      <a aria-hidden="true" href="#expand-ltr" id="expand-ltr" data-icon="expand"></a>
+
+      <a aria-hidden="true" href="#send-ltr" id="send-ltr" data-icon="send"></a>
+
+      <a aria-hidden="true" href="#edit-ltr" id="edit-ltr" data-icon="edit"></a>
+
+    </section>
+    <h3>RTL mode</h3>
+    <section dir="rtl">
+
+      <a aria-hidden="true" href="#back-rtl" id="back-rtl" data-icon="back"></a>
+
+      <a aria-hidden="true" href="#forward-rtl" id="forward-rtl" data-icon="forward"></a>
+
+      <a aria-hidden="true" href="#back-light-rtl" id="back-light-rtl" data-icon="back-light"></a>
+
+      <a aria-hidden="true" href="#forward-light-rtl" id="forward-light-rtl" data-icon="forward-light"></a>
+
+      <a aria-hidden="true" href="#arrow-back-rtl" id="arrow-back-rtl" data-icon="arrow-back"></a>
+
+      <a aria-hidden="true" href="#arrow-forward-rtl" id="arrow-forward-rtl" data-icon="arrow-forward"></a>
+
+      <a aria-hidden="true" href="#clear-input-rtl" id="clear-input-rtl" data-icon="clear-input"></a>
+
+      <a aria-hidden="true" href="#expand-rtl" id="expand-rtl" data-icon="expand"></a>
+
+      <a aria-hidden="true" href="#send-rtl" id="send-rtl" data-icon="send"></a>
+
+      <a aria-hidden="true" href="#edit-rtl" id="edit-rtl" data-icon="edit"></a>
+
+    </section>
+    <footer>
+      <label for="show-view-boxes">Show View Boxes</label>
+    </footer> -->
+  </body>
+</html>
