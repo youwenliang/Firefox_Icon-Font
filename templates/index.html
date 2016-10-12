@@ -15,38 +15,48 @@
       }
 
       body {
-        font-family: 'Helvetica', sans-serif;
-        background: #eee;
+        font-family: 'Fira Sans', sans-serif;
+        background: #e9e9e9;
         color: #444;
+        padding: 20px;
       }
 
       section {
         padding: 20px;
+        margin: 20px;
+        background-color: #fff;
         text-align: left;
       }
 
       section a {
         box-sizing: content-box;
         display: inline-block;
-        color: #222;
+        color: #666;
         width: 3rem;
         height: 3rem;
         text-decoration: none;
-        border: solid 1px #eee;
+        /*border: solid 1px #eee;*/
         text-align: center;
         margin: -1px;
-        background: #fff;
+        /*background: #fff;*/
         line-height: 1;
+        padding: 10px;
+        margin: 10px;
       }
+
+      /*section a:hover {
+        background: #f4f4f4;
+      }*/
 
       section a:hover {
-        background: #f4f4f4;
-      }
-
-      section a:target {
-        background: #00caf2;
+        background: #fbfbfb;
+        border-radius: 1px;
         transform: scale(2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+        
+        -webkit-transition: all .15s ease-in-out;
+        -moz-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
       }
 
       #show-view-boxes:checked ~ section a:before {
@@ -54,6 +64,14 @@
       }
 
       h1 {
+        font-size: 3em;
+        color: #666;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 20px 0 10px 20px;
+      }
+
+      /*h1 {
         position: absolute;
         z-index: -1;
         width: 100%;
@@ -68,7 +86,7 @@
         text-shadow:
           -1px -1px 0 rgba(0, 0, 0, 0.1),
           1px 1px 0 rgba(255, 255, 255, 0.5)
-      }
+      }*/
 
       footer {
         position: fixed;
@@ -113,11 +131,13 @@
     <!-- <input id="show-view-boxes" type="checkbox"> -->
     <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
     <section>
+    <h1>fxos Icons</h1>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
       <a aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>"></a>
+      <!-- <span><%= glyph %></span> -->
 <% } %>
     </section>
- <!--    <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
+    <!-- <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
     <h3>LTR mode</h3>
     <section dir="ltr">
 <%
@@ -135,8 +155,8 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
 for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIcons[iconIdx] %>
       <a aria-hidden="true" href="#<%= icon %>-rtl" id="<%= icon %>-rtl" data-icon="<%= icon %>"></a>
 <% } %>
-    </section>
-    <footer>
+    </section> -->
+    <!-- <footer>
       <label for="show-view-boxes">Show View Boxes</label>
     </footer> -->
   </body>
