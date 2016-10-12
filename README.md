@@ -1,15 +1,15 @@
-# fxos-icons
+# firefox-icons
 
 ## Installation
 
 ```bash
-$ npm install fxos-icons
+$ npm install firefox-icons
 ```
 
 Then include folowing file in HTML
 
 ```html
-<link rel="stylesheet" href="node_modules/fxos-icons/fxos-icons.css">
+<link rel="stylesheet" href="node_modules/firefox-icons/firefox-icons.css">
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ Use `i` tag to represent an icon.
 
 ## Examples
 
-- [Example](http://fxos-components.github.io/fxos-icons/)
+- [Example](http://fxos-components.github.io/firefox-icons/)
 
 ## Accessibility
 

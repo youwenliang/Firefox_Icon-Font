@@ -2,15 +2,15 @@
 /* Based on https://github.com/endtwist/fontcustom/blob/master/lib/fontcustom/templates/fontcustom.css */
 
 @font-face {
-	font-family: "fxos-icons";
-	src: url("fonts/fxos-icons.ttf") format("truetype");
+	font-family: "firefox-icons";
+	src: url("fonts/firefox-icons.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 [data-icon]:before,
 .ligature-icons {
-	font-family: "fxos-icons";
+	font-family: "firefox-icons";
 	content: attr(data-icon);
 	display: inline-block;
 	width: 1em; /* stop overflow in chrome */

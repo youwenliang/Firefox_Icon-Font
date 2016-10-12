@@ -35,10 +35,10 @@ performance on lower end devices.
 
 Example icon set file usage:
 
-If you called the output file 'fxos-icons.svg', then to reference the
+If you called the output file 'firefox-icons.svg', then to reference the
 'back-arrow' icon from an <img> element you would use something like:
 
-  <img src="fxos-icons.svg#back-arrow">
+  <img src="firefox-icons.svg#back-arrow">
 
 Any questions, ask Jonathan Watt <jwatt@jwatt.org>
 """

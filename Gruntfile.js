@@ -12,12 +12,12 @@ module.exports = function(grunt) {
         src: 'images/*.svg',
         dest: 'output/embedded/',
         options: {
-          font: 'fxos-icons',
+          font: 'firefox-icons',
           types: 'ttf',
           embed: 'ttf',
           ligatures: true,
           hashes: false,
-          template: 'templates/fxos-icons.css',
+          template: 'templates/firefox-icons.css',
           htmlDemoTemplate: 'templates/index.html'
         }
       },
@@ -29,9 +29,9 @@ module.exports = function(grunt) {
         destCss: 'output/files/',
         destHtml: 'output/files/',
         options: {
-          font: 'fxos-icons',
+          font: 'firefox-icons',
           types: 'ttf',
-          template: 'templates/fxos-icons.css',
+          template: 'templates/firefox-icons.css',
           htmlDemoTemplate: 'templates/index.html',
           ligatures: true,
           hashes: false,
@@ -50,13 +50,13 @@ module.exports = function(grunt) {
     // doesn't let us specify filenames).
     rename: {
       'css-embedded': {
-        src: 'output/embedded/fxos-icons.css',
-        dest: 'fxos-icons-embedded.css',
+        src: 'output/embedded/firefox-icons.css',
+        dest: 'firefox-icons-embedded.css',
       },
 
       css: {
-        src: 'output/files/fxos-icons.css',
-        dest: 'fxos-icons.css',
+        src: 'output/files/firefox-icons.css',
+        dest: 'firefox-icons.css',
       },
 
       fonts: {
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
       },
 
       example: {
-        src: 'output/files/fxos-icons.html',
+        src: 'output/files/firefox-icons.html',
         dest: 'index.html'
       }
     },
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 
     shell: {
       installFontOnSystem: {
-        command: 'cp ./fonts/fxos-icons.ttf /Users/${USER}/Library/Fonts/fxos-icons.ttf'
+        command: 'cp ./fonts/firefox-icons.ttf /Users/${USER}/Library/Fonts/firefox-icons.ttf'
       },
 
       completeMsg: {

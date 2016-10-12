@@ -1,9 +1,9 @@
 {
-  "name": "fxos-icons",
+  "name": "firefox-icons",
   "version": "2.1.2",
   "homepage": "https://github.com/fxos-components/fxos-icons",
   "license": "MIT",
-  "main": "fxos-icons.js",
+  "main": "firefox-icons.js",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
@@ -17,7 +17,7 @@
     "optimist": "^0.6.1"
   },
   "scripts": {
-    "lint": "jshint fxos-icons.js",
+    "lint": "jshint firefox-icons.js",
     "gh-pages": "git push upstream master:gh-pages",
     "build": "grunt"
   },

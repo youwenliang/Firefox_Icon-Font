@@ -1,5 +1,5 @@
 firefox-icons:
   build: .
   volumes:
-    - .:/fxos-icons
+    - .:/firefox-icons
   command: bin/build.sh
