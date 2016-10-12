@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>fxos-icons</title>
+    <title>Firefox Icon Fonts</title>
     <style>
       * {
         margin: 0;
@@ -15,38 +15,48 @@
       }
 
       body {
-        font-family: 'Helvetica', sans-serif;
-        background: #eee;
+        font-family: 'Fira Sans', sans-serif;
+        background: #e9e9e9;
         color: #444;
+        padding: 20px;
       }
 
       section {
         padding: 20px;
+        margin: 20px;
+        background-color: #fff;
         text-align: left;
       }
 
       section a {
         box-sizing: content-box;
         display: inline-block;
-        color: #222;
+        color: #666;
         width: 3rem;
         height: 3rem;
         text-decoration: none;
-        border: solid 1px #eee;
+        /*border: solid 1px #eee;*/
         text-align: center;
         margin: -1px;
-        background: #fff;
+        /*background: #fff;*/
         line-height: 1;
+        padding: 10px;
+        margin: 10px;
       }
+
+      /*section a:hover {
+        background: #f4f4f4;
+      }*/
 
       section a:hover {
-        background: #f4f4f4;
-      }
-
-      section a:target {
-        background: #00caf2;
+        background: #fbfbfb;
+        border-radius: 1px;
         transform: scale(2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+        
+        -webkit-transition: all .15s ease-in-out;
+        -moz-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
       }
 
       #show-view-boxes:checked ~ section a:before {
@@ -54,6 +64,14 @@
       }
 
       h1 {
+        font-size: 3em;
+        color: #666;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 20px 0 10px 20px;
+      }
+
+      /*h1 {
         position: absolute;
         z-index: -1;
         width: 100%;
@@ -68,7 +86,7 @@
         text-shadow:
           -1px -1px 0 rgba(0, 0, 0, 0.1),
           1px 1px 0 rgba(255, 255, 255, 0.5)
-      }
+      }*/
 
       footer {
         position: fixed;
@@ -113,229 +131,340 @@
     <!-- <input id="show-view-boxes" type="checkbox"> -->
     <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
     <section>
+    <h1>Firefox Icon Fonts</h1>
 
       <a aria-hidden="true" href="#add-on-circle" id="add-on-circle" data-icon="add-on-circle"></a>
+      <!-- <span>add-on-circle</span> -->
 
       <a aria-hidden="true" href="#add-on-disable" id="add-on-disable" data-icon="add-on-disable"></a>
+      <!-- <span>add-on-disable</span> -->
 
       <a aria-hidden="true" href="#add-on" id="add-on" data-icon="add-on"></a>
+      <!-- <span>add-on</span> -->
 
       <a aria-hidden="true" href="#add-reading-list" id="add-reading-list" data-icon="add-reading-list"></a>
+      <!-- <span>add-reading-list</span> -->
 
       <a aria-hidden="true" href="#add" id="add" data-icon="add"></a>
+      <!-- <span>add</span> -->
 
       <a aria-hidden="true" href="#audio" id="audio" data-icon="audio"></a>
+      <!-- <span>audio</span> -->
 
       <a aria-hidden="true" href="#back" id="back" data-icon="back"></a>
+      <!-- <span>back</span> -->
 
       <a aria-hidden="true" href="#bookmark-hollow" id="bookmark-hollow" data-icon="bookmark-hollow"></a>
+      <!-- <span>bookmark-hollow</span> -->
 
       <a aria-hidden="true" href="#bookmark" id="bookmark" data-icon="bookmark"></a>
+      <!-- <span>bookmark</span> -->
 
       <a aria-hidden="true" href="#camera-disable" id="camera-disable" data-icon="camera-disable"></a>
+      <!-- <span>camera-disable</span> -->
 
       <a aria-hidden="true" href="#camera" id="camera" data-icon="camera"></a>
+      <!-- <span>camera</span> -->
 
       <a aria-hidden="true" href="#caption" id="caption" data-icon="caption"></a>
+      <!-- <span>caption</span> -->
 
       <a aria-hidden="true" href="#cast" id="cast" data-icon="cast"></a>
+      <!-- <span>cast</span> -->
 
       <a aria-hidden="true" href="#chapter" id="chapter" data-icon="chapter"></a>
+      <!-- <span>chapter</span> -->
 
       <a aria-hidden="true" href="#check" id="check" data-icon="check"></a>
+      <!-- <span>check</span> -->
 
       <a aria-hidden="true" href="#chevron" id="chevron" data-icon="chevron"></a>
+      <!-- <span>chevron</span> -->
 
       <a aria-hidden="true" href="#copy" id="copy" data-icon="copy"></a>
+      <!-- <span>copy</span> -->
 
       <a aria-hidden="true" href="#cursor" id="cursor" data-icon="cursor"></a>
+      <!-- <span>cursor</span> -->
 
       <a aria-hidden="true" href="#cut" id="cut" data-icon="cut"></a>
+      <!-- <span>cut</span> -->
 
       <a aria-hidden="true" href="#developer" id="developer" data-icon="developer"></a>
+      <!-- <span>developer</span> -->
 
       <a aria-hidden="true" href="#devtools-panel" id="devtools-panel" data-icon="devtools-panel"></a>
+      <!-- <span>devtools-panel</span> -->
 
       <a aria-hidden="true" href="#disclosure-collapsed-right" id="disclosure-collapsed-right" data-icon="disclosure-collapsed-right"></a>
+      <!-- <span>disclosure-collapsed-right</span> -->
 
       <a aria-hidden="true" href="#disclosure-collapsed-up" id="disclosure-collapsed-up" data-icon="disclosure-collapsed-up"></a>
+      <!-- <span>disclosure-collapsed-up</span> -->
 
       <a aria-hidden="true" href="#disclosure-expand" id="disclosure-expand" data-icon="disclosure-expand"></a>
+      <!-- <span>disclosure-expand</span> -->
 
       <a aria-hidden="true" href="#disclosure-expanded" id="disclosure-expanded" data-icon="disclosure-expanded"></a>
+      <!-- <span>disclosure-expanded</span> -->
 
       <a aria-hidden="true" href="#downloads" id="downloads" data-icon="downloads"></a>
+      <!-- <span>downloads</span> -->
 
       <a aria-hidden="true" href="#drop-down" id="drop-down" data-icon="drop-down"></a>
+      <!-- <span>drop-down</span> -->
 
       <a aria-hidden="true" href="#encoding" id="encoding" data-icon="encoding"></a>
+      <!-- <span>encoding</span> -->
 
       <a aria-hidden="true" href="#feed" id="feed" data-icon="feed"></a>
+      <!-- <span>feed</span> -->
 
       <a aria-hidden="true" href="#forget" id="forget" data-icon="forget"></a>
+      <!-- <span>forget</span> -->
 
       <a aria-hidden="true" href="#forward" id="forward" data-icon="forward"></a>
+      <!-- <span>forward</span> -->
 
       <a aria-hidden="true" href="#full-screen" id="full-screen" data-icon="full-screen"></a>
+      <!-- <span>full-screen</span> -->
 
       <a aria-hidden="true" href="#fullscreen" id="fullscreen" data-icon="fullscreen"></a>
+      <!-- <span>fullscreen</span> -->
 
       <a aria-hidden="true" href="#globe" id="globe" data-icon="globe"></a>
+      <!-- <span>globe</span> -->
 
       <a aria-hidden="true" href="#go" id="go" data-icon="go"></a>
+      <!-- <span>go</span> -->
 
       <a aria-hidden="true" href="#help" id="help" data-icon="help"></a>
+      <!-- <span>help</span> -->
 
       <a aria-hidden="true" href="#history" id="history" data-icon="history"></a>
+      <!-- <span>history</span> -->
 
       <a aria-hidden="true" href="#home" id="home" data-icon="home"></a>
+      <!-- <span>home</span> -->
 
       <a aria-hidden="true" href="#import-export-windows" id="import-export-windows" data-icon="import-export-windows"></a>
+      <!-- <span>import-export-windows</span> -->
 
       <a aria-hidden="true" href="#info-hollow" id="info-hollow" data-icon="info-hollow"></a>
+      <!-- <span>info-hollow</span> -->
 
       <a aria-hidden="true" href="#info" id="info" data-icon="info"></a>
+      <!-- <span>info</span> -->
 
       <a aria-hidden="true" href="#list-windows" id="list-windows" data-icon="list-windows"></a>
+      <!-- <span>list-windows</span> -->
 
       <a aria-hidden="true" href="#location-disable-mac" id="location-disable-mac" data-icon="location-disable-mac"></a>
+      <!-- <span>location-disable-mac</span> -->
 
       <a aria-hidden="true" href="#location-disable-win" id="location-disable-win" data-icon="location-disable-win"></a>
+      <!-- <span>location-disable-win</span> -->
 
       <a aria-hidden="true" href="#location-disable" id="location-disable" data-icon="location-disable"></a>
+      <!-- <span>location-disable</span> -->
 
       <a aria-hidden="true" href="#location-mac" id="location-mac" data-icon="location-mac"></a>
+      <!-- <span>location-mac</span> -->
 
       <a aria-hidden="true" href="#location-win" id="location-win" data-icon="location-win"></a>
+      <!-- <span>location-win</span> -->
 
       <a aria-hidden="true" href="#location" id="location" data-icon="location"></a>
+      <!-- <span>location</span> -->
 
       <a aria-hidden="true" href="#mail" id="mail" data-icon="mail"></a>
+      <!-- <span>mail</span> -->
 
       <a aria-hidden="true" href="#menu" id="menu" data-icon="menu"></a>
+      <!-- <span>menu</span> -->
 
       <a aria-hidden="true" href="#microphone-disable" id="microphone-disable" data-icon="microphone-disable"></a>
+      <!-- <span>microphone-disable</span> -->
 
       <a aria-hidden="true" href="#microphone" id="microphone" data-icon="microphone"></a>
+      <!-- <span>microphone</span> -->
 
       <a aria-hidden="true" href="#mute" id="mute" data-icon="mute"></a>
+      <!-- <span>mute</span> -->
 
       <a aria-hidden="true" href="#new-tab" id="new-tab" data-icon="new-tab"></a>
+      <!-- <span>new-tab</span> -->
 
       <a aria-hidden="true" href="#new-window-mac" id="new-window-mac" data-icon="new-window-mac"></a>
+      <!-- <span>new-window-mac</span> -->
 
       <a aria-hidden="true" href="#new-window-win" id="new-window-win" data-icon="new-window-win"></a>
+      <!-- <span>new-window-win</span> -->
 
       <a aria-hidden="true" href="#no-audio" id="no-audio" data-icon="no-audio"></a>
+      <!-- <span>no-audio</span> -->
 
       <a aria-hidden="true" href="#notifications-disable" id="notifications-disable" data-icon="notifications-disable"></a>
+      <!-- <span>notifications-disable</span> -->
 
       <a aria-hidden="true" href="#notifications" id="notifications" data-icon="notifications"></a>
+      <!-- <span>notifications</span> -->
 
       <a aria-hidden="true" href="#open" id="open" data-icon="open"></a>
+      <!-- <span>open</span> -->
 
       <a aria-hidden="true" href="#organize-windows" id="organize-windows" data-icon="organize-windows"></a>
+      <!-- <span>organize-windows</span> -->
 
       <a aria-hidden="true" href="#page-left" id="page-left" data-icon="page-left"></a>
+      <!-- <span>page-left</span> -->
 
       <a aria-hidden="true" href="#panaroma" id="panaroma" data-icon="panaroma"></a>
+      <!-- <span>panaroma</span> -->
 
       <a aria-hidden="true" href="#panel-menu" id="panel-menu" data-icon="panel-menu"></a>
+      <!-- <span>panel-menu</span> -->
 
       <a aria-hidden="true" href="#password" id="password" data-icon="password"></a>
+      <!-- <span>password</span> -->
 
       <a aria-hidden="true" href="#past-search-linux" id="past-search-linux" data-icon="past-search-linux"></a>
+      <!-- <span>past-search-linux</span> -->
 
       <a aria-hidden="true" href="#paste" id="paste" data-icon="paste"></a>
+      <!-- <span>paste</span> -->
 
       <a aria-hidden="true" href="#pause" id="pause" data-icon="pause"></a>
+      <!-- <span>pause</span> -->
 
       <a aria-hidden="true" href="#permissions" id="permissions" data-icon="permissions"></a>
+      <!-- <span>permissions</span> -->
 
       <a aria-hidden="true" href="#play" id="play" data-icon="play"></a>
+      <!-- <span>play</span> -->
 
       <a aria-hidden="true" href="#plugin-disable" id="plugin-disable" data-icon="plugin-disable"></a>
+      <!-- <span>plugin-disable</span> -->
 
       <a aria-hidden="true" href="#plugin" id="plugin" data-icon="plugin"></a>
+      <!-- <span>plugin</span> -->
 
       <a aria-hidden="true" href="#pocket" id="pocket" data-icon="pocket"></a>
+      <!-- <span>pocket</span> -->
 
       <a aria-hidden="true" href="#pointer-disable" id="pointer-disable" data-icon="pointer-disable"></a>
+      <!-- <span>pointer-disable</span> -->
 
       <a aria-hidden="true" href="#pointer" id="pointer" data-icon="pointer"></a>
+      <!-- <span>pointer</span> -->
 
       <a aria-hidden="true" href="#popup-block" id="popup-block" data-icon="popup-block"></a>
+      <!-- <span>popup-block</span> -->
 
       <a aria-hidden="true" href="#print" id="print" data-icon="print"></a>
+      <!-- <span>print</span> -->
 
       <a aria-hidden="true" href="#privacy" id="privacy" data-icon="privacy"></a>
+      <!-- <span>privacy</span> -->
 
       <a aria-hidden="true" href="#quit" id="quit" data-icon="quit"></a>
+      <!-- <span>quit</span> -->
 
       <a aria-hidden="true" href="#reader-mode" id="reader-mode" data-icon="reader-mode"></a>
+      <!-- <span>reader-mode</span> -->
 
       <a aria-hidden="true" href="#reading-list" id="reading-list" data-icon="reading-list"></a>
+      <!-- <span>reading-list</span> -->
 
       <a aria-hidden="true" href="#reload" id="reload" data-icon="reload"></a>
+      <!-- <span>reload</span> -->
 
       <a aria-hidden="true" href="#save" id="save" data-icon="save"></a>
+      <!-- <span>save</span> -->
 
       <a aria-hidden="true" href="#screen-share-disable" id="screen-share-disable" data-icon="screen-share-disable"></a>
+      <!-- <span>screen-share-disable</span> -->
 
       <a aria-hidden="true" href="#screen-share" id="screen-share" data-icon="screen-share"></a>
+      <!-- <span>screen-share</span> -->
 
       <a aria-hidden="true" href="#search-hover-windows" id="search-hover-windows" data-icon="search-hover-windows"></a>
+      <!-- <span>search-hover-windows</span> -->
 
       <a aria-hidden="true" href="#search-win" id="search-win" data-icon="search-win"></a>
+      <!-- <span>search-win</span> -->
 
       <a aria-hidden="true" href="#search" id="search" data-icon="search"></a>
+      <!-- <span>search</span> -->
 
       <a aria-hidden="true" href="#secure" id="secure" data-icon="secure"></a>
+      <!-- <span>secure</span> -->
 
       <a aria-hidden="true" href="#settings-mac" id="settings-mac" data-icon="settings-mac"></a>
+      <!-- <span>settings-mac</span> -->
 
       <a aria-hidden="true" href="#settings-win" id="settings-win" data-icon="settings-win"></a>
+      <!-- <span>settings-win</span> -->
 
       <a aria-hidden="true" href="#share" id="share" data-icon="share"></a>
+      <!-- <span>share</span> -->
 
       <a aria-hidden="true" href="#sidebars-mac" id="sidebars-mac" data-icon="sidebars-mac"></a>
+      <!-- <span>sidebars-mac</span> -->
 
       <a aria-hidden="true" href="#sidebars-win" id="sidebars-win" data-icon="sidebars-win"></a>
+      <!-- <span>sidebars-win</span> -->
 
       <a aria-hidden="true" href="#stop" id="stop" data-icon="stop"></a>
+      <!-- <span>stop</span> -->
 
       <a aria-hidden="true" href="#store-data-disable" id="store-data-disable" data-icon="store-data-disable"></a>
+      <!-- <span>store-data-disable</span> -->
 
       <a aria-hidden="true" href="#store-data" id="store-data" data-icon="store-data"></a>
+      <!-- <span>store-data</span> -->
 
       <a aria-hidden="true" href="#sync" id="sync" data-icon="sync"></a>
+      <!-- <span>sync</span> -->
 
       <a aria-hidden="true" href="#tab" id="tab" data-icon="tab"></a>
+      <!-- <span>tab</span> -->
 
       <a aria-hidden="true" href="#titlebar-off" id="titlebar-off" data-icon="titlebar-off"></a>
+      <!-- <span>titlebar-off</span> -->
 
       <a aria-hidden="true" href="#titlebar-on" id="titlebar-on" data-icon="titlebar-on"></a>
+      <!-- <span>titlebar-on</span> -->
 
       <a aria-hidden="true" href="#tracking-disable" id="tracking-disable" data-icon="tracking-disable"></a>
+      <!-- <span>tracking-disable</span> -->
 
       <a aria-hidden="true" href="#tracking" id="tracking" data-icon="tracking"></a>
+      <!-- <span>tracking</span> -->
 
       <a aria-hidden="true" href="#type-controls" id="type-controls" data-icon="type-controls"></a>
+      <!-- <span>type-controls</span> -->
 
       <a aria-hidden="true" href="#unfullscreen" id="unfullscreen" data-icon="unfullscreen"></a>
+      <!-- <span>unfullscreen</span> -->
 
       <a aria-hidden="true" href="#urlbar-history-dropmarker" id="urlbar-history-dropmarker" data-icon="urlbar-history-dropmarker"></a>
+      <!-- <span>urlbar-history-dropmarker</span> -->
 
       <a aria-hidden="true" href="#warning-triangle" id="warning-triangle" data-icon="warning-triangle"></a>
+      <!-- <span>warning-triangle</span> -->
 
       <a aria-hidden="true" href="#web-app" id="web-app" data-icon="web-app"></a>
+      <!-- <span>web-app</span> -->
 
       <a aria-hidden="true" href="#web-ide" id="web-ide" data-icon="web-ide"></a>
+      <!-- <span>web-ide</span> -->
 
       <a aria-hidden="true" href="#webrtc" id="webrtc" data-icon="webrtc"></a>
+      <!-- <span>webrtc</span> -->
 
     </section>
- <!--    <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
+    <!-- <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
     <h3>LTR mode</h3>
     <section dir="ltr">
 
@@ -383,8 +512,8 @@
 
       <a aria-hidden="true" href="#edit-rtl" id="edit-rtl" data-icon="edit"></a>
 
-    </section>
-    <footer>
+    </section> -->
+    <!-- <footer>
       <label for="show-view-boxes">Show View Boxes</label>
     </footer> -->
   </body>

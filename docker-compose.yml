@@ -1,4 +1,4 @@
-fxos-icons:
+firefox-icons:
   build: .
   volumes:
     - .:/fxos-icons
