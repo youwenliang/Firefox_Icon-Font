@@ -12,6 +12,8 @@
 
       html {
         font-size: 10px;
+        width: 100%;
+        height: 100%;
       }
 
       body {
@@ -19,6 +21,8 @@
         background: #e9e9e9;
         color: #444;
         padding: 20px;
+        width: 100%;
+        height: 100%;
       }
 
       section {
@@ -32,8 +36,8 @@
         box-sizing: content-box;
         display: inline-block;
         color: #666;
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         text-decoration: none;
         /*border: solid 1px #eee;*/
         text-align: center;
@@ -44,11 +48,24 @@
         margin: 10px;
       }
 
+      section a div {
+        visibility: hidden;
+        margin-top: 5px;
+        font-size:5.5pt;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      *:focus {
+          outline: none;
+      }
+
       /*section a:hover {
         background: #f4f4f4;
       }*/
 
-      section a:hover {
+      section a:target {
         background: #fbfbfb;
         border-radius: 1px;
         transform: scale(2);
@@ -59,6 +76,10 @@
         transition: all .15s ease-in-out;
       }
 
+      section a:target div {
+        visibility: visible;
+      }
+
       #show-view-boxes:checked ~ section a:before {
         background: rgba(0, 0, 0, 0.12);
       }
@@ -66,7 +87,7 @@
       h1 {
         font-size: 3em;
         color: #666;
-        font-weight: 100;
+        font-weight: 200;
         text-transform: uppercase;
         margin: 20px 0 10px 20px;
       }
@@ -123,18 +144,20 @@
       #show-view-boxes {
         display: none;
       }
+
     </style>
     <link rel="stylesheet" href="firefox-icons.css">
     <!-- <link rel="stylesheet" href="bidi-helper.css"> -->
   </head>
-  <body>
+  <body onclick="myFunction()">
     <!-- <input id="show-view-boxes" type="checkbox"> -->
     <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
     <section>
     <h1>Firefox Icon Fonts</h1>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-      <a aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>"></a>
-      <!-- <span><%= glyph %></span> -->
+      <a aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
+        <div><%= glyph %></div>
+      </a>
 <% } %>
     </section>
     <!-- <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
@@ -159,5 +182,10 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
     <!-- <footer>
       <label for="show-view-boxes">Show View Boxes</label>
     </footer> -->
+  <script>
+  function myFunction() {
+    window.location.hash = "#";
+  }
+  </script>
   </body>
 </html>
