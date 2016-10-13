@@ -96,13 +96,14 @@
       }
 
       .info {
-        color: #fff;
+        color: #000;
+        font-size: 12pt;
         position: fixed;
         width: 100%;
         padding: 20px;
         height: 65px;
         margin: 0px auto;
-        background-color: #0095DD;
+        background-color: #FF9500;
         max-width: 600px;
         left: 0;
         right: 0;
@@ -117,23 +118,29 @@
       }
 
       .info > span {
-        font-size: 14pt;
         font-weight: 200;
-        top: -13px;
+        top: -16px;
         left: 10px;
         position: relative;
       }
 
       .info a {
-        font-size: 14pt;
         font-weight: 200;
         position: relative;
         float: right;
+        color: #000 !important;
+        text-decoration: none;
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+      }
+
+      .info a:hover {
         color: #fff !important;
       }
 
       .info i {
-        top: -2px;
+        top: -4px;
         position: relative;
       }
 
@@ -210,7 +217,7 @@
     <div class="info">
       <i aria-hidden="true"></i>
       <span></span>
-      <a href="#"><span>Download SVG file</span></a>
+      <a href="#" download><span>Download SVG file</span></a>
     </div>
     <!-- <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
     <h3>LTR mode</h3>
