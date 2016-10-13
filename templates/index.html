@@ -103,7 +103,7 @@
         height: 65px;
         margin: 0px auto;
         background-color: #0095DD;
-        max-width: 1200px;
+        max-width: 600px;
         left: 0;
         right: 0;
         bottom: -65px;
@@ -245,7 +245,7 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
         $('.info').addClass("active");
         $('.info i').attr('data-icon', $(this).attr('data-icon'));
         $('.info > span').text($(this).attr('data-icon'));
-        $('.info a').attr('href',"/images/"+$(this).attr('data-icon')+'.svg');
+        $('.info a').attr('href',"images/"+$(this).attr('data-icon')+'.svg');
       } else {
         $(this).removeClass("active");
         $('.info').removeClass("active");
