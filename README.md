@@ -1,4 +1,4 @@
-# firefox-icons
+# Firefox-Icon-Fonts
 
 ## Installation
 
