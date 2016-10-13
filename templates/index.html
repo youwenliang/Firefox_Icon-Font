@@ -32,7 +32,7 @@
         text-align: left;
       }
 
-      section a {
+      section i {
         box-sizing: content-box;
         display: inline-block;
         color: #666;
@@ -46,9 +46,10 @@
         line-height: 1;
         padding: 10px;
         margin: 10px;
+        cursor: pointer;
       }
 
-      section a div {
+      section i div {
         visibility: hidden;
         padding-top: 5px;
         font-size:5.5pt;
@@ -65,18 +66,18 @@
         background: #f4f4f4;
       }*/
 
-      section a:target {
+      section i.active {
         background: #fbfbfb;
         border-radius: 1px;
         transform: scale(2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
         
-        -webkit-transition: all .15s ease-in-out;
-        -moz-transition: all .15s ease-in-out;
-        transition: all .15s ease-in-out;
+        -webkit-transition: all .04s ease-in-out;
+        -moz-transition: all .04s ease-in-out;
+        transition: all .04s ease-in-out;
       }
 
-      section a:target div {
+      section i.active div {
         visibility: visible;
       }
 
@@ -149,15 +150,15 @@
     <link rel="stylesheet" href="firefox-icons.css">
     <!-- <link rel="stylesheet" href="bidi-helper.css"> -->
   </head>
-  <body onclick="myFunction()">
+  <body>
     <!-- <input id="show-view-boxes" type="checkbox"> -->
     <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
     <section>
     <h1>Firefox Icon Fonts</h1>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-      <a aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
+      <i aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
         <div><%= glyph %></div>
-      </a>
+      </i>
 <% } %>
     </section>
     <!-- <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
@@ -182,10 +183,35 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
     <!-- <footer>
       <label for="show-view-boxes">Show View Boxes</label>
     </footer> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
-  function myFunction() {
-    window.location.hash = "#";
-  }
+    $('i').click(function(e){
+      e.stopPropagation();
+      changeHashWithoutScrolling("#"+$(this).attr('data-icon'));
+      if(!$(this).hasClass("active")) {
+        $(".active").removeClass("active");
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+    });
+    $(window).click(function(e){
+      e.stopPropagation();
+      if($(".active").length != 0) {
+        window.location.hash = "#/";
+        $(".active").removeClass("active");
+      }
+    });
+
+    function changeHashWithoutScrolling(hash) {  
+      var id = hash.replace(/^.*#/, ''),  
+      elem = document.getElementById(id)  
+      elem.id = id+'-tmp'  
+      window.location.hash = hash  
+      elem.id = id  
+    }  
+
+
   </script>
   </body>
 </html>
