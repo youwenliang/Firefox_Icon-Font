@@ -14,4 +14,4 @@ $ ./run
 
 ## Examples
 
-- [Example](http://youwenliang.github.io/Firefox_Icon-Font/)
+- [Example](http://youwenliang.github.io/Firefox_Icon-Fonts/)
