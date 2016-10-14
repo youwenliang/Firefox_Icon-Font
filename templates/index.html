@@ -54,7 +54,7 @@
       section i div {
         visibility: hidden;
         padding-top: 5px;
-        font-size:5.5pt;
+        font-size:4.5pt;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -204,6 +204,7 @@
 
     </style>
     <link rel="stylesheet" href="firefox-icons.css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <!-- <link rel="stylesheet" href="bidi-helper.css"> -->
   </head>
   <body>
@@ -212,7 +213,7 @@
     <section>
     <h1>Firefox Icon Fonts</h1>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-      <i aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
+      <i aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>" title="<%= glyph %>">
         <div><%= glyph %></div>
       </i>
 <% } %>
