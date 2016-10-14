@@ -100,7 +100,6 @@
         font-size: 12pt;
         position: fixed;
         width: 100%;
-        padding: 24px;
         height: 65px;
         margin: 0px auto;
         background-color: #FF9500;
@@ -112,6 +111,7 @@
         -moz-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        line-height: 1.2;
       }
 
       .info.active {
@@ -122,11 +122,13 @@
         font-weight: 200;
         position: relative;
         float: left;
+        top: 50%;
         margin-left: 12px;
+        height: auto;
+        margin-top: -9.5px;
       }
 
       .info a {
-
         font-weight: 200;
         position: relative;
         float: right;
@@ -135,6 +137,10 @@
         -webkit-transition: all .1s ease-in-out;
         -moz-transition: all .1s ease-in-out;
         transition: all .1s ease-in-out;
+        top: 50%;
+        height: auto;
+        margin-top: -9.5px;
+        margin-right: 20px;
       }
 
       .info a:hover {
@@ -142,9 +148,14 @@
       }
 
       .info i {
-        top: -8px;
         position: relative;
+        width: 30px;
+        height: 30px;
         float: left;
+        margin-top: -18px;
+        top: 50%;
+        margin-left: 20px;
+
       }
 
       ul {
@@ -173,9 +184,13 @@
 
       .search i {
         position: absolute;
-        top: 8px;
-        left: 8px;
-        color: #ccc;
+        top: 12px;
+        left: 12px;
+        color: #a9a9a9;
+      }
+
+      .search i:before {
+        font-size: 20px;        
       }
 
       /*h1 {
@@ -330,7 +345,6 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
       window.location.hash = hash  
       elem.id = id  
     }  
-
 
   </script>
   </body>
