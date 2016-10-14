@@ -34,7 +34,7 @@
         max-width: 1200px;
       }
 
-      section i {
+      section .list i {
         box-sizing: content-box;
         display: inline-block;
         color: #666;
@@ -51,7 +51,7 @@
         cursor: pointer;
       }
 
-      section i div {
+      section .list i div {
         visibility: hidden;
         padding: 5px 0;
         font-size:4.5pt;
@@ -68,7 +68,7 @@
         background: #f4f4f4;
       }*/
 
-      section i.active {
+      section .list i.active {
         background: #fbfbfb;
         border-radius: 1px;
         transform: scale(2);
@@ -79,7 +79,7 @@
         transition: all .04s ease-in-out;
       }
 
-      section i.active div {
+      section .list i.active div {
         visibility: visible;
       }
 
@@ -92,7 +92,7 @@
         color: #666;
         font-weight: 200;
         text-transform: uppercase;
-        margin: 20px 0 10px 20px;
+        margin: 20px 0 20px 20px;
       }
 
       .info {
@@ -145,6 +145,37 @@
         top: -8px;
         position: relative;
         float: left;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      .search {
+        width: 30%;
+        height: 45px;
+        position: absolute;
+        right: 52px;
+        margin-top: -67px;
+      }
+
+      .search input {
+        width: 100%;
+        padding: 12px 20px 12px 40px;
+        font-size: 12pt;
+      }
+
+      .search i {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        color: #ccc;
       }
 
       /*h1 {
@@ -205,6 +236,7 @@
     </style>
     <link rel="stylesheet" href="firefox-icons.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    
     <!-- <link rel="stylesheet" href="bidi-helper.css"> -->
   </head>
   <body>
@@ -212,451 +244,570 @@
     <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
     <section>
     <h1>Firefox Icon Fonts</h1>
+    <div id="icons">
+      <div class="search">
+        <i aria-hidden="true" data-icon="search"></i>
+        <input placeholder="Search..." />
+      </div>
+    <ul class="list">
 
-      <i aria-hidden="true" href="#add-on-circle" id="add-on-circle" data-icon="add-on-circle" title="add-on-circle">
+      <li><i class="icon" aria-hidden="true" href="#add-on-circle" id="add-on-circle" data-icon="add-on-circle" title="add-on-circle">
         <div>add-on-circle</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#add-on-disable" id="add-on-disable" data-icon="add-on-disable" title="add-on-disable">
+      <li><i class="icon" aria-hidden="true" href="#add-on-disable" id="add-on-disable" data-icon="add-on-disable" title="add-on-disable">
         <div>add-on-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#add-on" id="add-on" data-icon="add-on" title="add-on">
+      <li><i class="icon" aria-hidden="true" href="#add-on" id="add-on" data-icon="add-on" title="add-on">
         <div>add-on</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#add-reading-list" id="add-reading-list" data-icon="add-reading-list" title="add-reading-list">
+      <li><i class="icon" aria-hidden="true" href="#add-reading-list" id="add-reading-list" data-icon="add-reading-list" title="add-reading-list">
         <div>add-reading-list</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#add" id="add" data-icon="add" title="add">
+      <li><i class="icon" aria-hidden="true" href="#add" id="add" data-icon="add" title="add">
         <div>add</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#audio" id="audio" data-icon="audio" title="audio">
+      <li><i class="icon" aria-hidden="true" href="#audio" id="audio" data-icon="audio" title="audio">
         <div>audio</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#back" id="back" data-icon="back" title="back">
+      <li><i class="icon" aria-hidden="true" href="#back" id="back" data-icon="back" title="back">
         <div>back</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#bookmark-hollow" id="bookmark-hollow" data-icon="bookmark-hollow" title="bookmark-hollow">
+      <li><i class="icon" aria-hidden="true" href="#bookmark-hollow" id="bookmark-hollow" data-icon="bookmark-hollow" title="bookmark-hollow">
         <div>bookmark-hollow</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#bookmark" id="bookmark" data-icon="bookmark" title="bookmark">
+      <li><i class="icon" aria-hidden="true" href="#bookmark" id="bookmark" data-icon="bookmark" title="bookmark">
         <div>bookmark</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#camera-disable" id="camera-disable" data-icon="camera-disable" title="camera-disable">
+      <li><i class="icon" aria-hidden="true" href="#camera-disable" id="camera-disable" data-icon="camera-disable" title="camera-disable">
         <div>camera-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#camera" id="camera" data-icon="camera" title="camera">
+      <li><i class="icon" aria-hidden="true" href="#camera" id="camera" data-icon="camera" title="camera">
         <div>camera</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#caption" id="caption" data-icon="caption" title="caption">
+      <li><i class="icon" aria-hidden="true" href="#caption" id="caption" data-icon="caption" title="caption">
         <div>caption</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#cast" id="cast" data-icon="cast" title="cast">
+      <li><i class="icon" aria-hidden="true" href="#cast" id="cast" data-icon="cast" title="cast">
         <div>cast</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#chapter" id="chapter" data-icon="chapter" title="chapter">
+      <li><i class="icon" aria-hidden="true" href="#chapter" id="chapter" data-icon="chapter" title="chapter">
         <div>chapter</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#check" id="check" data-icon="check" title="check">
+      <li><i class="icon" aria-hidden="true" href="#check" id="check" data-icon="check" title="check">
         <div>check</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#chevron" id="chevron" data-icon="chevron" title="chevron">
+      <li><i class="icon" aria-hidden="true" href="#chevron" id="chevron" data-icon="chevron" title="chevron">
         <div>chevron</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#copy" id="copy" data-icon="copy" title="copy">
+      <li><i class="icon" aria-hidden="true" href="#copy" id="copy" data-icon="copy" title="copy">
         <div>copy</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#cursor" id="cursor" data-icon="cursor" title="cursor">
+      <li><i class="icon" aria-hidden="true" href="#cursor" id="cursor" data-icon="cursor" title="cursor">
         <div>cursor</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#cut" id="cut" data-icon="cut" title="cut">
+      <li><i class="icon" aria-hidden="true" href="#cut" id="cut" data-icon="cut" title="cut">
         <div>cut</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#developer" id="developer" data-icon="developer" title="developer">
+      <li><i class="icon" aria-hidden="true" href="#developer" id="developer" data-icon="developer" title="developer">
         <div>developer</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#devtools-panel" id="devtools-panel" data-icon="devtools-panel" title="devtools-panel">
+      <li><i class="icon" aria-hidden="true" href="#devtools-panel" id="devtools-panel" data-icon="devtools-panel" title="devtools-panel">
         <div>devtools-panel</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#disclosure-collapsed-right" id="disclosure-collapsed-right" data-icon="disclosure-collapsed-right" title="disclosure-collapsed-right">
+      <li><i class="icon" aria-hidden="true" href="#disclosure-collapsed-right" id="disclosure-collapsed-right" data-icon="disclosure-collapsed-right" title="disclosure-collapsed-right">
         <div>disclosure-collapsed-right</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#disclosure-collapsed-up" id="disclosure-collapsed-up" data-icon="disclosure-collapsed-up" title="disclosure-collapsed-up">
+      <li><i class="icon" aria-hidden="true" href="#disclosure-collapsed-up" id="disclosure-collapsed-up" data-icon="disclosure-collapsed-up" title="disclosure-collapsed-up">
         <div>disclosure-collapsed-up</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#disclosure-expand" id="disclosure-expand" data-icon="disclosure-expand" title="disclosure-expand">
+      <li><i class="icon" aria-hidden="true" href="#disclosure-expand" id="disclosure-expand" data-icon="disclosure-expand" title="disclosure-expand">
         <div>disclosure-expand</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#disclosure-expanded" id="disclosure-expanded" data-icon="disclosure-expanded" title="disclosure-expanded">
+      <li><i class="icon" aria-hidden="true" href="#disclosure-expanded" id="disclosure-expanded" data-icon="disclosure-expanded" title="disclosure-expanded">
         <div>disclosure-expanded</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#downloads" id="downloads" data-icon="downloads" title="downloads">
+      <li><i class="icon" aria-hidden="true" href="#downloads" id="downloads" data-icon="downloads" title="downloads">
         <div>downloads</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#drop-down" id="drop-down" data-icon="drop-down" title="drop-down">
+      <li><i class="icon" aria-hidden="true" href="#drop-down" id="drop-down" data-icon="drop-down" title="drop-down">
         <div>drop-down</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#encoding" id="encoding" data-icon="encoding" title="encoding">
+      <li><i class="icon" aria-hidden="true" href="#encoding" id="encoding" data-icon="encoding" title="encoding">
         <div>encoding</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#feed" id="feed" data-icon="feed" title="feed">
+      <li><i class="icon" aria-hidden="true" href="#feed" id="feed" data-icon="feed" title="feed">
         <div>feed</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#forget" id="forget" data-icon="forget" title="forget">
+      <li><i class="icon" aria-hidden="true" href="#forget" id="forget" data-icon="forget" title="forget">
         <div>forget</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#forward" id="forward" data-icon="forward" title="forward">
+      <li><i class="icon" aria-hidden="true" href="#forward" id="forward" data-icon="forward" title="forward">
         <div>forward</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#full-screen" id="full-screen" data-icon="full-screen" title="full-screen">
+      <li><i class="icon" aria-hidden="true" href="#full-screen" id="full-screen" data-icon="full-screen" title="full-screen">
         <div>full-screen</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#fullscreen" id="fullscreen" data-icon="fullscreen" title="fullscreen">
+      <li><i class="icon" aria-hidden="true" href="#fullscreen" id="fullscreen" data-icon="fullscreen" title="fullscreen">
         <div>fullscreen</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#globe" id="globe" data-icon="globe" title="globe">
+      <li><i class="icon" aria-hidden="true" href="#globe" id="globe" data-icon="globe" title="globe">
         <div>globe</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#go" id="go" data-icon="go" title="go">
+      <li><i class="icon" aria-hidden="true" href="#go" id="go" data-icon="go" title="go">
         <div>go</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#help" id="help" data-icon="help" title="help">
+      <li><i class="icon" aria-hidden="true" href="#help" id="help" data-icon="help" title="help">
         <div>help</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#history" id="history" data-icon="history" title="history">
+      <li><i class="icon" aria-hidden="true" href="#history" id="history" data-icon="history" title="history">
         <div>history</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#home" id="home" data-icon="home" title="home">
+      <li><i class="icon" aria-hidden="true" href="#home" id="home" data-icon="home" title="home">
         <div>home</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#import-export-windows" id="import-export-windows" data-icon="import-export-windows" title="import-export-windows">
+      <li><i class="icon" aria-hidden="true" href="#import-export-windows" id="import-export-windows" data-icon="import-export-windows" title="import-export-windows">
         <div>import-export-windows</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#info-hollow" id="info-hollow" data-icon="info-hollow" title="info-hollow">
+      <li><i class="icon" aria-hidden="true" href="#info-hollow" id="info-hollow" data-icon="info-hollow" title="info-hollow">
         <div>info-hollow</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#info" id="info" data-icon="info" title="info">
+      <li><i class="icon" aria-hidden="true" href="#info" id="info" data-icon="info" title="info">
         <div>info</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#list-windows" id="list-windows" data-icon="list-windows" title="list-windows">
+      <li><i class="icon" aria-hidden="true" href="#list-windows" id="list-windows" data-icon="list-windows" title="list-windows">
         <div>list-windows</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#location-disable-mac" id="location-disable-mac" data-icon="location-disable-mac" title="location-disable-mac">
+      <li><i class="icon" aria-hidden="true" href="#location-disable-mac" id="location-disable-mac" data-icon="location-disable-mac" title="location-disable-mac">
         <div>location-disable-mac</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#location-disable-win" id="location-disable-win" data-icon="location-disable-win" title="location-disable-win">
+      <li><i class="icon" aria-hidden="true" href="#location-disable-win" id="location-disable-win" data-icon="location-disable-win" title="location-disable-win">
         <div>location-disable-win</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#location-disable" id="location-disable" data-icon="location-disable" title="location-disable">
+      <li><i class="icon" aria-hidden="true" href="#location-disable" id="location-disable" data-icon="location-disable" title="location-disable">
         <div>location-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#location-mac" id="location-mac" data-icon="location-mac" title="location-mac">
+      <li><i class="icon" aria-hidden="true" href="#location-mac" id="location-mac" data-icon="location-mac" title="location-mac">
         <div>location-mac</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#location-win" id="location-win" data-icon="location-win" title="location-win">
+      <li><i class="icon" aria-hidden="true" href="#location-win" id="location-win" data-icon="location-win" title="location-win">
         <div>location-win</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#location" id="location" data-icon="location" title="location">
+      <li><i class="icon" aria-hidden="true" href="#location" id="location" data-icon="location" title="location">
         <div>location</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#mail" id="mail" data-icon="mail" title="mail">
+      <li><i class="icon" aria-hidden="true" href="#mail" id="mail" data-icon="mail" title="mail">
         <div>mail</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#manager-hsu" id="manager-hsu" data-icon="manager-hsu" title="manager-hsu">
+      <li><i class="icon" aria-hidden="true" href="#manager-hsu" id="manager-hsu" data-icon="manager-hsu" title="manager-hsu">
         <div>manager-hsu</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#menu" id="menu" data-icon="menu" title="menu">
+      <li><i class="icon" aria-hidden="true" href="#menu" id="menu" data-icon="menu" title="menu">
         <div>menu</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#microphone-disable" id="microphone-disable" data-icon="microphone-disable" title="microphone-disable">
+      <li><i class="icon" aria-hidden="true" href="#microphone-disable" id="microphone-disable" data-icon="microphone-disable" title="microphone-disable">
         <div>microphone-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#microphone" id="microphone" data-icon="microphone" title="microphone">
+      <li><i class="icon" aria-hidden="true" href="#microphone" id="microphone" data-icon="microphone" title="microphone">
         <div>microphone</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#mute" id="mute" data-icon="mute" title="mute">
+      <li><i class="icon" aria-hidden="true" href="#mute" id="mute" data-icon="mute" title="mute">
         <div>mute</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#new-tab" id="new-tab" data-icon="new-tab" title="new-tab">
+      <li><i class="icon" aria-hidden="true" href="#new-tab" id="new-tab" data-icon="new-tab" title="new-tab">
         <div>new-tab</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#new-window-mac" id="new-window-mac" data-icon="new-window-mac" title="new-window-mac">
+      <li><i class="icon" aria-hidden="true" href="#new-window-mac" id="new-window-mac" data-icon="new-window-mac" title="new-window-mac">
         <div>new-window-mac</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#new-window-win" id="new-window-win" data-icon="new-window-win" title="new-window-win">
+      <li><i class="icon" aria-hidden="true" href="#new-window-win" id="new-window-win" data-icon="new-window-win" title="new-window-win">
         <div>new-window-win</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#no-audio" id="no-audio" data-icon="no-audio" title="no-audio">
+      <li><i class="icon" aria-hidden="true" href="#no-audio" id="no-audio" data-icon="no-audio" title="no-audio">
         <div>no-audio</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#notifications-disable" id="notifications-disable" data-icon="notifications-disable" title="notifications-disable">
+      <li><i class="icon" aria-hidden="true" href="#notifications-disable" id="notifications-disable" data-icon="notifications-disable" title="notifications-disable">
         <div>notifications-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#notifications" id="notifications" data-icon="notifications" title="notifications">
+      <li><i class="icon" aria-hidden="true" href="#notifications" id="notifications" data-icon="notifications" title="notifications">
         <div>notifications</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#open" id="open" data-icon="open" title="open">
+      <li><i class="icon" aria-hidden="true" href="#open" id="open" data-icon="open" title="open">
         <div>open</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#organize-windows" id="organize-windows" data-icon="organize-windows" title="organize-windows">
+      <li><i class="icon" aria-hidden="true" href="#organize-windows" id="organize-windows" data-icon="organize-windows" title="organize-windows">
         <div>organize-windows</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#page-left" id="page-left" data-icon="page-left" title="page-left">
+      <li><i class="icon" aria-hidden="true" href="#page-left" id="page-left" data-icon="page-left" title="page-left">
         <div>page-left</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#panaroma" id="panaroma" data-icon="panaroma" title="panaroma">
+      <li><i class="icon" aria-hidden="true" href="#panaroma" id="panaroma" data-icon="panaroma" title="panaroma">
         <div>panaroma</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#panel-menu" id="panel-menu" data-icon="panel-menu" title="panel-menu">
+      <li><i class="icon" aria-hidden="true" href="#panel-menu" id="panel-menu" data-icon="panel-menu" title="panel-menu">
         <div>panel-menu</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#password" id="password" data-icon="password" title="password">
+      <li><i class="icon" aria-hidden="true" href="#password" id="password" data-icon="password" title="password">
         <div>password</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#past-search-linux" id="past-search-linux" data-icon="past-search-linux" title="past-search-linux">
+      <li><i class="icon" aria-hidden="true" href="#past-search-linux" id="past-search-linux" data-icon="past-search-linux" title="past-search-linux">
         <div>past-search-linux</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#paste" id="paste" data-icon="paste" title="paste">
+      <li><i class="icon" aria-hidden="true" href="#paste" id="paste" data-icon="paste" title="paste">
         <div>paste</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#pause" id="pause" data-icon="pause" title="pause">
+      <li><i class="icon" aria-hidden="true" href="#pause" id="pause" data-icon="pause" title="pause">
         <div>pause</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#permissions" id="permissions" data-icon="permissions" title="permissions">
+      <li><i class="icon" aria-hidden="true" href="#permissions" id="permissions" data-icon="permissions" title="permissions">
         <div>permissions</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#play" id="play" data-icon="play" title="play">
+      <li><i class="icon" aria-hidden="true" href="#play" id="play" data-icon="play" title="play">
         <div>play</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#plugin-disable" id="plugin-disable" data-icon="plugin-disable" title="plugin-disable">
+      <li><i class="icon" aria-hidden="true" href="#plugin-disable" id="plugin-disable" data-icon="plugin-disable" title="plugin-disable">
         <div>plugin-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#plugin" id="plugin" data-icon="plugin" title="plugin">
+      <li><i class="icon" aria-hidden="true" href="#plugin" id="plugin" data-icon="plugin" title="plugin">
         <div>plugin</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#pocket" id="pocket" data-icon="pocket" title="pocket">
+      <li><i class="icon" aria-hidden="true" href="#pocket" id="pocket" data-icon="pocket" title="pocket">
         <div>pocket</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#pointer-disable" id="pointer-disable" data-icon="pointer-disable" title="pointer-disable">
+      <li><i class="icon" aria-hidden="true" href="#pointer-disable" id="pointer-disable" data-icon="pointer-disable" title="pointer-disable">
         <div>pointer-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#pointer" id="pointer" data-icon="pointer" title="pointer">
+      <li><i class="icon" aria-hidden="true" href="#pointer" id="pointer" data-icon="pointer" title="pointer">
         <div>pointer</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#popup-block" id="popup-block" data-icon="popup-block" title="popup-block">
+      <li><i class="icon" aria-hidden="true" href="#popup-block" id="popup-block" data-icon="popup-block" title="popup-block">
         <div>popup-block</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#print" id="print" data-icon="print" title="print">
+      <li><i class="icon" aria-hidden="true" href="#print" id="print" data-icon="print" title="print">
         <div>print</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#privacy" id="privacy" data-icon="privacy" title="privacy">
+      <li><i class="icon" aria-hidden="true" href="#privacy" id="privacy" data-icon="privacy" title="privacy">
         <div>privacy</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#quit" id="quit" data-icon="quit" title="quit">
+      <li><i class="icon" aria-hidden="true" href="#quit" id="quit" data-icon="quit" title="quit">
         <div>quit</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#reader-mode" id="reader-mode" data-icon="reader-mode" title="reader-mode">
+      <li><i class="icon" aria-hidden="true" href="#reader-mode" id="reader-mode" data-icon="reader-mode" title="reader-mode">
         <div>reader-mode</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#reading-list" id="reading-list" data-icon="reading-list" title="reading-list">
+      <li><i class="icon" aria-hidden="true" href="#reading-list" id="reading-list" data-icon="reading-list" title="reading-list">
         <div>reading-list</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#reload" id="reload" data-icon="reload" title="reload">
+      <li><i class="icon" aria-hidden="true" href="#reload" id="reload" data-icon="reload" title="reload">
         <div>reload</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#save" id="save" data-icon="save" title="save">
+      <li><i class="icon" aria-hidden="true" href="#save" id="save" data-icon="save" title="save">
         <div>save</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#screen-share-disable" id="screen-share-disable" data-icon="screen-share-disable" title="screen-share-disable">
+      <li><i class="icon" aria-hidden="true" href="#screen-share-disable" id="screen-share-disable" data-icon="screen-share-disable" title="screen-share-disable">
         <div>screen-share-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#screen-share" id="screen-share" data-icon="screen-share" title="screen-share">
+      <li><i class="icon" aria-hidden="true" href="#screen-share" id="screen-share" data-icon="screen-share" title="screen-share">
         <div>screen-share</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#search-hover-windows" id="search-hover-windows" data-icon="search-hover-windows" title="search-hover-windows">
+      <li><i class="icon" aria-hidden="true" href="#search-hover-windows" id="search-hover-windows" data-icon="search-hover-windows" title="search-hover-windows">
         <div>search-hover-windows</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#search-win" id="search-win" data-icon="search-win" title="search-win">
+      <li><i class="icon" aria-hidden="true" href="#search-win" id="search-win" data-icon="search-win" title="search-win">
         <div>search-win</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#search" id="search" data-icon="search" title="search">
+      <li><i class="icon" aria-hidden="true" href="#search" id="search" data-icon="search" title="search">
         <div>search</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#secure" id="secure" data-icon="secure" title="secure">
+      <li><i class="icon" aria-hidden="true" href="#secure" id="secure" data-icon="secure" title="secure">
         <div>secure</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#settings-mac" id="settings-mac" data-icon="settings-mac" title="settings-mac">
+      <li><i class="icon" aria-hidden="true" href="#settings-mac" id="settings-mac" data-icon="settings-mac" title="settings-mac">
         <div>settings-mac</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#settings-win" id="settings-win" data-icon="settings-win" title="settings-win">
+      <li><i class="icon" aria-hidden="true" href="#settings-win" id="settings-win" data-icon="settings-win" title="settings-win">
         <div>settings-win</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#share" id="share" data-icon="share" title="share">
+      <li><i class="icon" aria-hidden="true" href="#share" id="share" data-icon="share" title="share">
         <div>share</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#sidebars-mac" id="sidebars-mac" data-icon="sidebars-mac" title="sidebars-mac">
+      <li><i class="icon" aria-hidden="true" href="#sidebars-mac" id="sidebars-mac" data-icon="sidebars-mac" title="sidebars-mac">
         <div>sidebars-mac</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#sidebars-win" id="sidebars-win" data-icon="sidebars-win" title="sidebars-win">
+      <li><i class="icon" aria-hidden="true" href="#sidebars-win" id="sidebars-win" data-icon="sidebars-win" title="sidebars-win">
         <div>sidebars-win</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#stop" id="stop" data-icon="stop" title="stop">
+      <li><i class="icon" aria-hidden="true" href="#stop" id="stop" data-icon="stop" title="stop">
         <div>stop</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#store-data-disable" id="store-data-disable" data-icon="store-data-disable" title="store-data-disable">
+      <li><i class="icon" aria-hidden="true" href="#store-data-disable" id="store-data-disable" data-icon="store-data-disable" title="store-data-disable">
         <div>store-data-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#store-data" id="store-data" data-icon="store-data" title="store-data">
+      <li><i class="icon" aria-hidden="true" href="#store-data" id="store-data" data-icon="store-data" title="store-data">
         <div>store-data</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#sync" id="sync" data-icon="sync" title="sync">
+      <li><i class="icon" aria-hidden="true" href="#sync" id="sync" data-icon="sync" title="sync">
         <div>sync</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#tab" id="tab" data-icon="tab" title="tab">
+      <li><i class="icon" aria-hidden="true" href="#tab" id="tab" data-icon="tab" title="tab">
         <div>tab</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#titlebar-off" id="titlebar-off" data-icon="titlebar-off" title="titlebar-off">
+      <li><i class="icon" aria-hidden="true" href="#titlebar-off" id="titlebar-off" data-icon="titlebar-off" title="titlebar-off">
         <div>titlebar-off</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#titlebar-on" id="titlebar-on" data-icon="titlebar-on" title="titlebar-on">
+      <li><i class="icon" aria-hidden="true" href="#titlebar-on" id="titlebar-on" data-icon="titlebar-on" title="titlebar-on">
         <div>titlebar-on</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#tracking-disable" id="tracking-disable" data-icon="tracking-disable" title="tracking-disable">
+      <li><i class="icon" aria-hidden="true" href="#tracking-disable" id="tracking-disable" data-icon="tracking-disable" title="tracking-disable">
         <div>tracking-disable</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#tracking" id="tracking" data-icon="tracking" title="tracking">
+      <li><i class="icon" aria-hidden="true" href="#tracking" id="tracking" data-icon="tracking" title="tracking">
         <div>tracking</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#type-controls" id="type-controls" data-icon="type-controls" title="type-controls">
+      <li><i class="icon" aria-hidden="true" href="#type-controls" id="type-controls" data-icon="type-controls" title="type-controls">
         <div>type-controls</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#unfullscreen" id="unfullscreen" data-icon="unfullscreen" title="unfullscreen">
+      <li><i class="icon" aria-hidden="true" href="#unfullscreen" id="unfullscreen" data-icon="unfullscreen" title="unfullscreen">
         <div>unfullscreen</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#urlbar-history-dropmarker" id="urlbar-history-dropmarker" data-icon="urlbar-history-dropmarker" title="urlbar-history-dropmarker">
+      <li><i class="icon" aria-hidden="true" href="#urlbar-history-dropmarker" id="urlbar-history-dropmarker" data-icon="urlbar-history-dropmarker" title="urlbar-history-dropmarker">
         <div>urlbar-history-dropmarker</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#warning-triangle" id="warning-triangle" data-icon="warning-triangle" title="warning-triangle">
+      <li><i class="icon" aria-hidden="true" href="#warning-triangle" id="warning-triangle" data-icon="warning-triangle" title="warning-triangle">
         <div>warning-triangle</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#web-app" id="web-app" data-icon="web-app" title="web-app">
+      <li><i class="icon" aria-hidden="true" href="#web-app" id="web-app" data-icon="web-app" title="web-app">
         <div>web-app</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#web-ide" id="web-ide" data-icon="web-ide" title="web-ide">
+      <li><i class="icon" aria-hidden="true" href="#web-ide" id="web-ide" data-icon="web-ide" title="web-ide">
         <div>web-ide</div>
       </i>
+      </li>
 
-      <i aria-hidden="true" href="#webrtc" id="webrtc" data-icon="webrtc" title="webrtc">
+      <li><i class="icon" aria-hidden="true" href="#webrtc" id="webrtc" data-icon="webrtc" title="webrtc">
         <div>webrtc</div>
       </i>
+      </li>
 
+    </ul>
+    </div>
     </section>
     <div class="info">
       <i aria-hidden="true"></i>
@@ -716,8 +867,19 @@
       <label for="show-view-boxes">Show View Boxes</label>
     </footer> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
   <script>
-    $('i').click(function(e){
+
+    var options = {
+      valueNames: [
+        { attr: 'data-icon', name: 'icon' },
+      ]
+    };
+    var iconList = new List('icons', options);
+
+
+
+    $('.list i').click(function(e){
       e.stopPropagation();
       changeHashWithoutScrolling("#"+$(this).attr('data-icon'));
       if(!$(this).hasClass("active")) {

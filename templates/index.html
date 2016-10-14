@@ -34,7 +34,7 @@
         max-width: 1200px;
       }
 
-      section i {
+      section .list i {
         box-sizing: content-box;
         display: inline-block;
         color: #666;
@@ -51,7 +51,7 @@
         cursor: pointer;
       }
 
-      section i div {
+      section .list i div {
         visibility: hidden;
         padding: 5px 0;
         font-size:4.5pt;
@@ -68,7 +68,7 @@
         background: #f4f4f4;
       }*/
 
-      section i.active {
+      section .list i.active {
         background: #fbfbfb;
         border-radius: 1px;
         transform: scale(2);
@@ -79,7 +79,7 @@
         transition: all .04s ease-in-out;
       }
 
-      section i.active div {
+      section .list i.active div {
         visibility: visible;
       }
 
@@ -92,7 +92,7 @@
         color: #666;
         font-weight: 200;
         text-transform: uppercase;
-        margin: 20px 0 10px 20px;
+        margin: 20px 0 20px 20px;
       }
 
       .info {
@@ -145,6 +145,37 @@
         top: -8px;
         position: relative;
         float: left;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      .search {
+        width: 30%;
+        height: 45px;
+        position: absolute;
+        right: 52px;
+        margin-top: -67px;
+      }
+
+      .search input {
+        width: 100%;
+        padding: 12px 20px 12px 40px;
+        font-size: 12pt;
+      }
+
+      .search i {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        color: #ccc;
       }
 
       /*h1 {
@@ -205,6 +236,7 @@
     </style>
     <link rel="stylesheet" href="firefox-icons.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    
     <!-- <link rel="stylesheet" href="bidi-helper.css"> -->
   </head>
   <body>
@@ -212,11 +244,20 @@
     <!-- <a href="#"><h1>Gaia Icons</h1></a> -->
     <section>
     <h1>Firefox Icon Fonts</h1>
+    <div id="icons">
+      <div class="search">
+        <i aria-hidden="true" data-icon="search"></i>
+        <input placeholder="Search..." />
+      </div>
+    <ul class="list">
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-      <i aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>" title="<%= glyph %>">
+      <li><i class="icon" aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>" title="<%= glyph %>">
         <div><%= glyph %></div>
       </i>
+      </li>
 <% } %>
+    </ul>
+    </div>
     </section>
     <div class="info">
       <i aria-hidden="true"></i>
@@ -246,8 +287,19 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
       <label for="show-view-boxes">Show View Boxes</label>
     </footer> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
   <script>
-    $('i').click(function(e){
+
+    var options = {
+      valueNames: [
+        { attr: 'data-icon', name: 'icon' },
+      ]
+    };
+    var iconList = new List('icons', options);
+
+
+
+    $('.list i').click(function(e){
       e.stopPropagation();
       changeHashWithoutScrolling("#"+$(this).attr('data-icon'));
       if(!$(this).hasClass("active")) {
