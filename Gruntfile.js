@@ -1,4 +1,7 @@
 /*global module*/
+
+var path = require('path');
+
 module.exports = function(grunt) {
   'use strict';
 
@@ -6,10 +9,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('bower.json'),
 
     webfont: {
-
       // Creates a stylesheet with embedded font
       embedded: {
-        src: 'images/*.svg',
+        src: 'images/**/*.svg',
         dest: 'output/embedded/',
         options: {
           font: 'firefox-icons',
@@ -18,13 +20,13 @@ module.exports = function(grunt) {
           ligatures: true,
           hashes: false,
           template: 'templates/firefox-icons.css',
-          htmlDemoTemplate: 'templates/index.html'
+          htmlDemoTemplate: 'templates/index.html',
         }
       },
 
       // Creates font files
       files: {
-        src: 'images/*.svg',
+        src: 'images/**/*.svg',
         dest: 'output/files/fonts/',
         destCss: 'output/files/',
         destHtml: 'output/files/',
@@ -40,6 +42,10 @@ module.exports = function(grunt) {
             baseClass: '',
             classPrefix: '',
             mixinPrefix: ''
+          },
+          rename: function(name) {
+              // .icon_entypo-add, .icon_fontawesome-add, etc. 
+              return [path.basename(path.dirname(name)), path.basename(name)].join('_');
           }
         }
       }
@@ -93,7 +99,7 @@ module.exports = function(grunt) {
 
     watch: {
       build: {
-        files: ["images/*.svg"],
+        files: ["images/**/*.svg"],
         tasks: ["build"]
       }
     }
