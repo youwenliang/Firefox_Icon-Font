@@ -21,6 +21,11 @@ module.exports = function(grunt) {
           hashes: false,
           template: 'templates/firefox-icons.css',
           htmlDemoTemplate: 'templates/index.html',
+          templateOptions: {
+            baseClass: '',
+            classPrefix: '',
+            mixinPrefix: ''
+          }
         }
       },
 
@@ -39,10 +44,11 @@ module.exports = function(grunt) {
           hashes: false,
           autoHint: false,
           templateOptions: {
-            baseClass: '',
+            baseClass:'',
             classPrefix: '',
             mixinPrefix: ''
           },
+          
           rename: function(name) {
               // .icon_entypo-add, .icon_fontawesome-add, etc. 
               return [path.basename(path.dirname(name)), path.basename(name)].join('_');
