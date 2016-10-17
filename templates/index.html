@@ -280,7 +280,7 @@
     <h1>Firefox Icon Fonts</h1>
     <div id="icons">
       <div class="search">
-        <i aria-hidden="true" data-icon="search"></i>
+        <i aria-hidden="true" data-icon="group4_search"></i>
         <input placeholder="Search..." />
       </div>
     <ul class="list">
@@ -294,12 +294,12 @@
       <li class="group">
         <h1><%= path %></h1>
       </li>
-      <li><i class="icon" aria-hidden="true" href="#<%= name %>" id="<%= name %>" data-icon="<%= name %>" title="<%= name %>" data-path="<%= path %>">
+      <li><i class="icon" aria-hidden="true" href="#<%= name %>" id="<%= name %>" data-icon="<%= glyph %>" title="<%= name %>" data-path="<%= path %>">
         <div><%= name %></div>
       </i>
       </li>
       <% path_origin = path; } else { %>
-        <li><i class="icon" aria-hidden="true" href="#<%= name %>" id="<%= name %>" data-icon="<%= name %>" title="<%= name %>" data-path="<%= path %>">
+        <li><i class="icon" aria-hidden="true" href="#<%= name %>" id="<%= name %>" data-icon="<%= glyph %>" title="<%= name %>" data-path="<%= path %>">
           <div><%= name %></div>
         </i>
         </li>
@@ -349,14 +349,14 @@ for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIc
 
     $('.list i').click(function(e){
       e.stopPropagation();
-      changeHashWithoutScrolling("#"+$(this).attr('data-icon'));
+      changeHashWithoutScrolling("#"+$(this).attr('title'));
       if(!$(this).hasClass("active")) {
         $(".active").removeClass("active");
         $(this).addClass("active");
         $('.info').addClass("active");
         $('.info i').attr('data-icon', $(this).attr('data-icon'));
-        $('.info > span').text($(this).attr('data-icon'));
-        $('.info a').attr('href',"images/"+$(this).attr('data-icon')+'.svg');
+        $('.info > span').text($(this).attr('title'));
+        $('.info a').attr('href',"images/"+$(this).attr('title')+'.svg');
       } else {
         $(this).removeClass("active");
         $('.info').removeClass("active");
