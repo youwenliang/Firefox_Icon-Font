@@ -293,24 +293,31 @@
     <div id="icons">
       <div class="search">
         <i aria-hidden="true" data-icon="search-mac"></i>
-        <input placeholder="Search..." />
+        <input placeholder="Search..." autocomplete=off />
       </div>
+    <div class="space"></div>      
     <ul class="list">
-    <% var path_origin = ""; %>
+    <% var path_origin = ""; var check = 0 %>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx]
       var name = glyph.split('_')[1];
       var path = glyph.split('_')[0];
       if(path != path_origin) {
       %>
+      <% if (check != 0) {%>
       <div class="space"></div>
+      <% } %>
       <li class="group">
-        <h1><%= path %></h1>
+        <% if (check != 0) {%>
+          <h1><%= path %></h1>
+        <% } else {%>
+          <h1 style="margin-top: 20px"><%= path %></h1>
+        <% } %>
       </li>
       <li><i class="icon" aria-hidden="true" href="#<%= name %>" id="<%= name %>" data-icon="<%= name %>" title="<%= name %>" data-path="<%= path %>">
         <div><%= name %></div>
       </i>
       </li>
-      <% path_origin = path; } else { %>
+      <% path_origin = path; check++} else { %>
         <li><i class="icon" aria-hidden="true" href="#<%= name %>" id="<%= name %>" data-icon="<%= name %>" title="<%= name %>" data-path="<%= path %>">
           <div><%= name %></div>
         </i>
